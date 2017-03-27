@@ -1,6 +1,6 @@
 import React, {PropTypes} from 'react';
 import {connectToMessageContainer} from 'react-input-message';
-import cn from 'classnames';
+import {Form} from 'semantic-ui-react';
 import TPropTypes from 'tproptypes';
 
 /**
@@ -14,15 +14,14 @@ import TPropTypes from 'tproptypes';
  * @property {module:addons/TPropTypes.sFieldMessages} messages - Error messages from React Formal form.
  */
 function SField(props) {
-	const classes = cn(props.className, 'field', {
-		required: props.required,
-		error: !!props.messages[props.for],
-	});
-
 	return (
-		<div className={classes}>
+		<Form.Field
+			className={props.className}
+			required={props.required ? '*' : false}
+		  error={!!props.messages[props.for]}
+		>
 			{props.children}
-		</div>
+		</Form.Field>
 	);
 }
 

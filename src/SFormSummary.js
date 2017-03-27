@@ -1,6 +1,7 @@
 import React, {PropTypes} from 'react';
 import Form from 'react-formal';
 import hash from 'string-hash';
+import {Message} from 'semantic-ui-react';
 
 /**
  * Displays a message indicating any errors with the form. Include inside a SForm to automatically read the form's errors.
@@ -14,10 +15,10 @@ export default function SFormSummary(props) {
 	</ul>) : null;
 
 	return (
-		<div className="ui error message">
+		<Message error>
 			<Form.Summary/>
 			{otherErrors}
-		</div>
+		</Message>
 	);
 }
 

@@ -1,10 +1,11 @@
 /* eslint-disable react/forbid-prop-types */
 import React, {Component, PropTypes} from 'react';
-import Form from 'react-formal';
-import cn from 'classnames';
+import {default as Formal} from 'react-formal';
 import isEmpty from 'lodash/isEmpty';
 import TPropTypes from 'tproptypes';
+import {Form} from 'semantic-ui-react';
 import SFormSummary from './SFormSummary';
+import SField from './SField';
 
 /**
  * Renders a React Formal form using SemanticUI.
@@ -61,8 +62,10 @@ export default class SForm extends Component {
 
 		return (
 			<Form
+				as={Formal}
 				onError={this.handleError}
-				className={cn('ui form', {error, loading: this.props.loading})}
+				error={error}
+				loading={this.props.loading}
 				ref={node => (this._form = node)}
 				schema={this.props.schema}
 				value={this.props.value}
@@ -83,3 +86,6 @@ export default class SForm extends Component {
 		);
 	}
 }
+
+SForm.Field = SField;
+SForm.Summary = SFormSummary;

@@ -3,26 +3,14 @@
  * a value prop and an onChange() prop.
  * @module module:addons/controls
  * */
-import SCheckbox from './SCheckbox';
-import SField from './SField';
-import SForm from './SForm';
-import SFormSummary from './SFormSummary';
-import SRadio from './SRadio';
-import SRadioOption from './SRadioOption';
-import SSelect from './SSelect';
-import DropdownMenu from './DropdownMenu';
-import QuickForm from './QuickForm';
-import SMaskedInput from './SMaskedInput';
 
-export {
-	SField,
-	SForm,
-	SFormSummary,
-	SRadio,
-	SRadioOption,
-	SSelect,
-	SCheckbox,
-	DropdownMenu,
-	QuickForm,
-	SMaskedInput,
-};
+export {default as SForm} from './SForm';
+export {default as ResponsiveMenu} from './ResponsiveMenu';
+
+// import SCheckbox from './SCheckbox';
+// import SRadio from './SRadio';
+// import SRadioOption from './SRadioOption';
+// import SSelect from './SSelect';
+// import DropdownMenu from './DropdownMenu';
+// import QuickForm from './QuickForm';
+// import SMaskedInput from './SMaskedInput';
