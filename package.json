@@ -1,6 +1,6 @@
 {
   "name": "controls",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A collection of form components designed with SemanticUI. They all adhere to React Formal's policy of having a value prop and an onChange() prop.",
   "main": "lib/index.js",
   "scripts": {
@@ -10,14 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com"
+    "url": "https://github.com/thr-consulting/controls.git"
   },
   "keywords": [
     "react",
-    "controls"
+    "controls",
+	  "semantic-ui"
   ],
   "author": "Mike Kornelson <mike@durbn.net>",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.1",
@@ -27,31 +28,28 @@
     "chai": "^3.5.0",
     "chai-enzyme": "^0.6.1",
     "cheerio": "^0.22.0",
-    "css-loader": "^0.27.3",
-    "enzyme": "^2.7.1",
-    "extract-text-webpack-plugin": "^2.1.0",
+    "enzyme": "^2.8.0",
     "jsdom": "^9.12.0",
     "jsdom-global": "^2.1.1",
     "mocha": "^3.2.0",
-    "postcss-loader": "^1.3.3",
-    "postcss-modules-values": "^1.2.2",
     "react": "^15.4.2",
     "react-addons-test-utils": "^15.4.2",
     "react-dom": "^15.4.2",
-    "semantic-ui-react": "^0.67.1",
-    "style-loader": "^0.16.0",
-    "webpack": "^2.2.1",
+	  "react-formal": "^0.24.3",
+	  "semantic-ui-react": "^0.67.2",
+    "webpack": "^2.3.2",
     "webpack-node-externals": "^1.5.4"
   },
   "peerDependencies": {
     "react": "15.x",
-    "semantic-ui-react": "^0.67.x"
+    "react-formal": "0.24.x",
+    "semantic-ui-react": "0.67.x"
   },
   "dependencies": {
-    "classnames": "^2.2.5",
-    "jquery.inputmask": "^3.3.4",
+    "debug": "^2.6.3",
+	  "jquery": "^3.2.1",
+	  "jquery.inputmask": "^3.3.4",
     "lodash": "^4.17.4",
-    "react-formal": "^0.24.3",
     "react-input-message": "^0.14.2",
     "react-responsive": "^1.2.7",
     "string-hash": "^1.1.3",

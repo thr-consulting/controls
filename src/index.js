@@ -4,13 +4,19 @@
  * @module module:addons/controls
  * */
 
-export {default as SForm} from './SForm';
-export {default as ResponsiveMenu} from './ResponsiveMenu';
+import {Field, Button as SubmitButton} from 'react-formal';
+import SForm from './SForm';
+import ResponsiveMenu from './ResponsiveMenu';
+import FieldMap from './FieldMap';
+import RadioGroup from './RadioGroup';
+import MaskedInput from './MaskedInput';
 
-// import SCheckbox from './SCheckbox';
-// import SRadio from './SRadio';
-// import SRadioOption from './SRadioOption';
-// import SSelect from './SSelect';
-// import DropdownMenu from './DropdownMenu';
-// import QuickForm from './QuickForm';
-// import SMaskedInput from './SMaskedInput';
+export {
+	SForm,
+	ResponsiveMenu,
+	FieldMap,
+	RadioGroup,
+	Field,
+	SubmitButton,
+	MaskedInput,
+};

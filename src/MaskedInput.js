@@ -1,4 +1,5 @@
 import React, {Component, PropTypes} from 'react';
+import {Input} from 'semantic-ui-react';
 import Inputmask from 'inputmask';
 import 'inputmask.extensions';
 import 'inputmask.numeric.extensions';
@@ -125,7 +126,9 @@ export default class SMaskedInput extends Component {
 
 	render() {
 		return (
-			<input ref={r => (this._input = r)}/>
+			<Input>
+				<input ref={r => (this._input = r)}/>
+			</Input>
 		);
 	}
 }

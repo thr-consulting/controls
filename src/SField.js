@@ -16,8 +16,6 @@ import TPropTypes from 'tproptypes';
 function SField(props) {
 	return (
 		<Form.Field
-			className={props.className}
-			required={props.required ? '*' : false}
 		  error={!!props.messages[props.for]}
 		>
 			{props.children}
@@ -29,8 +27,9 @@ SField.propTypes = {
 	for: PropTypes.string.isRequired,
 	messages: TPropTypes.sFieldMessages,
 	children: TPropTypes.reactElements,
-	className: PropTypes.string,
 	required: PropTypes.bool,
 };
 
 export default connectToMessageContainer.default(SField);
+
+/* required={props.required ? '*' : false} */
