@@ -127,7 +127,9 @@ export default class SMaskedInput extends Component {
 	render() {
 		return (
 			<Input>
-				<input ref={r => (this._input = r)}/>
+				<div>
+					<input ref={r => (this._input = r)}/>
+				</div>
 			</Input>
 		);
 	}
