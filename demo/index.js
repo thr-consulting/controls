@@ -1,5 +1,4 @@
-import {MaskedInput} from '../lib';
-import RadioGroup from "../src/RadioGroup";
+import {MaskedInput, RadioGroup} from '../lib';
 import {Form} from 'semantic-ui-react';
 
 ReactDOM.render((

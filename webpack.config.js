@@ -7,12 +7,13 @@ const root = path.resolve(__dirname);
 module.exports = {
 	entry: './src/index.js',
 	target: 'node',
+	devtool: 'source-map',
 	externals: [nodeExternals()],
 	output: {
 		path: path.resolve(root, 'lib'),
-		filename: "index.js",
-		library: "controls",
-		libraryTarget: "umd"
+		filename: 'index.js',
+		library: 'controls',
+		libraryTarget: 'umd'
 	},
 	module: {
 		rules: [
@@ -35,11 +36,12 @@ module.exports = {
 		]
 	},
 	plugins: [
-		new webpack.optimize.UglifyJsPlugin({
-			compress: {
-				warnings: false,
-			},
-		}),
+		// new webpack.optimize.UglifyJsPlugin({
+		// 	compress: {
+		// 		warnings: false,
+		// 	},
+		// 	sourceMap: true,
+		// }),
 	],
 	resolve: {
 		alias: {
