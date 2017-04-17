@@ -1,8 +1,7 @@
 import React, {Component, PropTypes} from 'react';
 import {Input} from 'semantic-ui-react';
+import 'inputmask/dist/inputmask/inputmask.numeric.extensions';
 import Inputmask from 'inputmask';
-import 'inputmask.extensions';
-import 'inputmask.numeric.extensions';
 
 /**
  * See source for detailed prop types or {@link https://github.com/RobinHerbots/jquery.inputmask|here} for more info.

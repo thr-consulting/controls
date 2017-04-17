@@ -42,13 +42,5 @@ module.exports = {
 		// 	},
 		// 	sourceMap: true,
 		// }),
-	],
-	resolve: {
-		alias: {
-			'inputmask.dependencyLib': path.join(root, 'node_modules/jquery.inputmask/dist/inputmask/inputmask.dependencyLib.js'),
-			'inputmask.extensions': path.join(root, 'node_modules/jquery.inputmask/dist/inputmask/inputmask.extensions.js'),
-			'inputmask.numeric.extensions': path.join(root, 'node_modules/jquery.inputmask/dist/inputmask/inputmask.numeric.extensions.js'),
-			'inputmask': path.join(root, 'node_modules/jquery.inputmask/dist/inputmask/inputmask.js')
-		},
-	},
+	]
 };
