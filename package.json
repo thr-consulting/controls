@@ -1,6 +1,6 @@
 {
 	"name": "controls",
-	"version": "0.1.7",
+	"version": "0.1.8",
 	"description": "A collection of form components designed with SemanticUI. They all adhere to React Formal's policy of having a value prop and an onChange() prop.",
 	"main": "dist/index.js",
 	"scripts": {
@@ -22,7 +22,7 @@
 	"license": "MIT",
 	"devDependencies": {
 		"babel-core": "^6.24.1",
-		"babel-loader": "^6.4.1",
+		"babel-loader": "^7.0.0",
 		"babel-preset-es2015": "^6.24.1",
 		"babel-preset-react": "^6.24.1",
 		"babel-preset-stage-1": "^6.24.1",
@@ -32,30 +32,30 @@
 		"enzyme": "^2.8.2",
 		"jsdoc": "^3.4.3",
 		"jsdoc-babel": "^0.3.0",
-		"jsdom": "^9.12.0",
-		"jsdom-global": "^2.1.1",
-		"mocha": "^3.2.0",
+		"jsdom": "^10.1.0",
+		"jsdom-global": "^3.0.2",
+		"mocha": "^3.3.0",
 		"react": "^15.5.4",
 		"react-addons-test-utils": "^15.5.1",
 		"react-dom": "^15.5.4",
-		"react-formal": "^0.24.3",
+		"react-formal": "^0.25.0",
 		"react-scripts": "^0.9.5",
-		"semantic-ui-react": "^0.68.0",
-		"webpack": "^2.4.1",
-		"webpack-node-externals": "^1.5.4"
+		"semantic-ui-react": "^0.68.3",
+		"webpack": "^2.5.1",
+		"webpack-node-externals": "^1.6.0"
 	},
 	"peerDependencies": {
 		"react": "^15.5.0",
-		"react-formal": "^0.24.0",
+		"react-formal": "^0.25.0",
 		"semantic-ui-react": "^0.68.0"
 	},
 	"dependencies": {
-		"debug": "^2.6.3",
-		"inputmask": "^3.3.5",
+		"debug": "^2.6.6",
+		"inputmask": "^3.3.6",
 		"lodash": "^4.17.4",
-		"prop-types": "^15.5.8",
-		"react-input-message": "^0.14.2",
-		"react-responsive": "^1.2.9",
+		"prop-types": "^15.5.9",
+		"react-input-message": "^0.15.1",
+		"react-responsive": "^1.3.0",
 		"string-hash": "^1.1.3",
 		"tproptypes": "^0.1.5"
 	}
