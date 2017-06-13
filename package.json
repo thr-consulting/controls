@@ -1,61 +1,61 @@
 {
-	"name": "controls",
-	"version": "0.1.8",
-	"description": "A collection of form components designed with SemanticUI. They all adhere to React Formal's policy of having a value prop and an onChange() prop.",
-	"main": "dist/index.js",
-	"scripts": {
-		"build": "webpack --config webpack.config.js",
-		"demo": "react-scripts start",
-		"prepublish": "npm run build",
-		"test": "npm run build && NODE_ENV=test mocha --compilers js:babel-core/register --require ./test/helpers.js --require ./test/dom.js --recursive",
-		"tdd": "NODE_ENV=test npm test -- --watch"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/thr-consulting/controls.git"
-	},
-	"keywords": [
-		"react",
-		"controls",
-		"semantic-ui"
-	],
-	"author": "Mike Kornelson <mike@durbn.net>",
-	"license": "MIT",
-	"devDependencies": {
-		"babel-core": "^6.25.0",
-		"babel-loader": "^7.0.0",
-		"babel-preset-es2015": "^6.24.1",
-		"babel-preset-react": "^6.24.1",
-		"babel-preset-stage-1": "^6.24.1",
-		"chai": "^4.0.2",
-		"enzyme": "^2.8.2",
-		"jsdoc": "^3.4.3",
-		"jsdoc-babel": "^0.3.0",
-		"jsdom": "^9.0.0",
-		"mocha": "^3.4.2",
-		"react": "^15.6.0",
-		"react-addons-test-utils": "^15.5.1",
-		"react-dom": "^15.6.0",
-		"react-formal": "^0.25.4",
-		"react-test-renderer": "^15.5.4",
-		"semantic-ui-react": "^0.68.5",
-		"sinon": "^2.3.4",
-		"webpack": "^2.6.1",
-		"webpack-node-externals": "^1.6.0"
-	},
-	"peerDependencies": {
-		"react": "^15.5.0",
-		"react-formal": "^0.25.4",
-		"semantic-ui-react": "^0.68.0"
-	},
-	"dependencies": {
-		"debug": "^2.6.8",
-		"inputmask": "^3.3.7",
-		"lodash": "^4.17.4",
-		"prop-types": "^15.5.10",
-		"react-input-message": "^0.15.1",
-		"react-responsive": "^1.3.0",
-		"string-hash": "^1.1.3",
-		"tproptypes": "^0.1.5"
-	}
+  "name": "controls",
+  "version": "0.1.9",
+  "description": "A collection of form components designed with SemanticUI. They all adhere to React Formal's policy of having a value prop and an onChange() prop.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "demo": "react-scripts start",
+    "prepublish": "npm run build",
+    "test": "npm run build && NODE_ENV=test mocha --compilers js:babel-core/register --require ./test/helpers.js --require ./test/dom.js --recursive",
+    "tdd": "NODE_ENV=test npm test -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thr-consulting/controls.git"
+  },
+  "keywords": [
+    "react",
+    "controls",
+    "semantic-ui"
+  ],
+  "author": "Mike Kornelson <mike@durbn.net>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "chai": "^4.0.2",
+    "enzyme": "^2.8.2",
+    "jsdoc": "^3.4.3",
+    "jsdoc-babel": "^0.3.0",
+    "jsdom": "^9.0.0",
+    "mocha": "^3.4.2",
+    "react": "^15.6.0",
+    "react-addons-test-utils": "^15.5.1",
+    "react-dom": "^15.6.0",
+    "react-formal": "^0.25.4",
+    "react-test-renderer": "^15.5.4",
+    "semantic-ui-react": "^0.68.5",
+    "sinon": "^2.3.4",
+    "webpack": "^2.6.1",
+    "webpack-node-externals": "^1.6.0"
+  },
+  "peerDependencies": {
+    "react": "^15.5.0",
+    "react-formal": "^0.25.4",
+    "semantic-ui-react": "^0.68.0"
+  },
+  "dependencies": {
+    "debug": "^2.6.8",
+    "inputmask": "^3.3.7",
+    "lodash": "^4.17.4",
+    "prop-types": "^15.5.10",
+    "react-input-message": "^0.15.1",
+    "react-responsive": "^1.3.0",
+    "string-hash": "^1.1.3",
+    "tproptypes": "^0.1.5"
+  }
 }
