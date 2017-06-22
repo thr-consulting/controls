@@ -47,7 +47,7 @@
   "peerDependencies": {
     "react": "^15.5.0",
     "react-formal": "^0.25.4",
-    "semantic-ui-react": "^0.68.0"
+    "semantic-ui-react": "^0.69.0"
   },
   "dependencies": {
     "debug": "^2.6.8",
