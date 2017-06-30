@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import {MaskedInput, RadioGroup} from '../dist';
 import {Grid, Header, Form, Segment} from 'semantic-ui-react';
+import {MaskedInput, RadioGroup} from './dist';
 
 class App extends Component {
   render() {

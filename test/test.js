@@ -1,13 +1,15 @@
 import React from 'react';
-import {MaskedInput} from '../dist';
+import sinon from 'sinon';
+import {shallow} from 'enzyme';
+import {MaskedInput, SinEntry} from '../dist';
 
 before(() => {
 	sinon.stub(console, 'error').callsFake(warning => {
 		throw new Error(warning);
-	})
+	});
 });
 after(() => {
-	console.error.restore()
+	console.error.restore();
 });
 
 describe('MaskedInput', () => {
@@ -17,5 +19,11 @@ describe('MaskedInput', () => {
 
 	it('renders without error', () => {
 		shallow(<MaskedInput mask={mask}/>);
+	});
+});
+
+describe('SinEntry', () => {
+	it('renders without error', () => {
+		shallow(<SinEntry/>);
 	});
 });

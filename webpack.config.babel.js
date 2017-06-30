@@ -1,6 +1,6 @@
-var webpack = require('webpack');
-var path = require('path');
-var nodeExternals = require('webpack-node-externals');
+// import webpack from 'webpack';
+import path from 'path';
+import nodeExternals from 'webpack-node-externals';
 
 const root = path.resolve(__dirname);
 
@@ -13,7 +13,7 @@ module.exports = {
 		path: path.resolve(root, 'dist'),
 		filename: 'index.js',
 		library: 'controls',
-		libraryTarget: 'umd'
+		libraryTarget: 'umd',
 	},
 	module: {
 		rules: [
@@ -28,13 +28,13 @@ module.exports = {
 							presets: [
 								['es2015', {loose: true, modules: false}],
 								'stage-1',
-								'react'
-							]
-						}
-					}
+								'react',
+							],
+						},
+					},
 				],
 			},
-		]
+		],
 	},
 	plugins: [
 		// new webpack.optimize.UglifyJsPlugin({
@@ -43,5 +43,5 @@ module.exports = {
 		// 	},
 		// 	sourceMap: true,
 		// }),
-	]
+	],
 };
