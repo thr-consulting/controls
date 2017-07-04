@@ -1,6 +1,6 @@
 {
   "name": "controls",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "description": "A collection of form components designed with SemanticUI. They all adhere to React Formal's policy of having a value prop and an onChange() prop.",
   "main": "dist/index.js",
   "scripts": {
@@ -13,7 +13,9 @@
     "lint": "eslint *.js lib"
   },
   "jest": {
-    "snapshotSerializers": ["enzyme-to-json/serializer"]
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   },
   "repository": {
     "type": "git",
