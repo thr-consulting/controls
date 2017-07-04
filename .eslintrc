@@ -1,7 +1,7 @@
 {
   "parser": "babel-eslint",
   "plugins": [
-    "react", "babel", "flowtype", "mocha"
+    "react", "babel", "flowtype", "jest"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -13,7 +13,7 @@
     "commonjs": true,
     "es6": true,
     "node": true,
-    "mocha": true
+    "jest/globals": true
   },
 	"globals": {
 		"process": false,
@@ -40,6 +40,8 @@
     "react/jsx-indent": ["error", "tab"],
     "react/require-default-props": "off",
     "react/jsx-indent-props": ["error", "tab"],
-    "react/no-unknown-property": "warn"
+    "react/no-unknown-property": "warn",
+
+    "jsx-a11y/label-has-for": "off"
   }
 }
