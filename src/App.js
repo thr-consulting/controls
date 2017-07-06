@@ -1,6 +1,6 @@
 import React from 'react';
 import {Grid, Header, Form, Segment} from 'semantic-ui-react';
-import {MaskedInput, RadioGroup} from './dist';
+import {MaskedInput, RadioGroup, ResponsiveMenu} from './lib';
 
 export default function App() {
 	return (
@@ -27,6 +27,20 @@ export default function App() {
 							</Form.Field>
 						</Form>
 					</Segment>
+				</Grid.Column>
+			</Grid.Row>
+			<Grid.Row>
+				<Grid.Column>
+					<ResponsiveMenu vertical>
+						<ResponsiveMenu.Item as="a" text="Home" icon="home"/>
+						<ResponsiveMenu.Item text="Home" icon="home"/>
+						<ResponsiveMenu.Item text="Home" icon="home"/>
+						<ResponsiveMenu.Item text="Home" icon="home"/>
+						<ResponsiveMenu.Dropdown text="More Home" icon="dollar">
+							<ResponsiveMenu.Item text="Home" icon="home"/>
+							<ResponsiveMenu.Item text="Home" icon="home"/>
+						</ResponsiveMenu.Dropdown>
+					</ResponsiveMenu>
 				</Grid.Column>
 			</Grid.Row>
 		</Grid>

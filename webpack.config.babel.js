@@ -5,7 +5,7 @@ import nodeExternals from 'webpack-node-externals';
 const root = path.resolve(__dirname);
 
 module.exports = {
-	entry: './lib/index.js',
+	entry: './src/lib/index.js',
 	target: 'node',
 	devtool: 'source-map',
 	externals: [nodeExternals()],

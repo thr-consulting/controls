@@ -5,12 +5,12 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "webpack --config webpack.config.babel.js",
-    "demo": "ln -fs ../dist ./src/dist && react-scripts start",
-    "prepublish": "npm run build",
+    "demo": "react-scripts start",
+    "prepare": "npm run build",
     "test": "jest",
     "test:watch": "jest --watch",
     "flow": "flow",
-    "lint": "eslint *.js lib"
+    "lint": "eslint *.js src/lib"
   },
   "jest": {
     "snapshotSerializers": [
@@ -63,13 +63,14 @@
     "react": "^15.5.0",
     "react-dom": "^15.6.0",
     "react-formal": "^0.25.4",
-    "semantic-ui-react": "^0.69.0"
+    "semantic-ui-react": "^0.70.0"
   },
   "dependencies": {
     "debug": "^2.6.8",
     "inputmask": "^3.3.7",
     "lodash": "^4.17.4",
     "prop-types": "^15.5.10",
+    "react-flow-types": "^0.1.1",
     "react-input-message": "^0.15.1",
     "react-responsive": "^1.3.0",
     "string-hash": "^1.1.3",
