@@ -12,10 +12,9 @@ import SField from './SField';
 
 /**
  * Renders a React Formal form using SemanticUI.
- * @memberOf module:addons/controls
  * @class
  * @property {boolean} [showSummary=false] - If true, displays the summary above the form children.
- * @property {module:addons/TPropTypes~reactElements} children - Child React elements.
+ * @property {Components[]} children - Child React elements.
  * @property {boolean} [loading=false] - If true, displays a loader over the form.
  * @property {string[]} otherErrors - An array of error strings passed to the SFormSummary.
  */

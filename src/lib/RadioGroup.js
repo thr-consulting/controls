@@ -8,6 +8,13 @@ import {Form} from 'semantic-ui-react';
 
 const d = debug('controls:RadioGroup');
 
+/**
+ * Groups React Semantic UI Radio elements into a single group
+ * @class
+ * @property {Component[]} children - Radio or Form.Radio components
+ * @property {onChange} onChange - Standard onChange handler
+ * @property {bool|number|string|Object} value - The currently selected radio item
+ */
 export default class RadioGroup extends Component {
 	static propTypes = {
 		children: TPropTypes.reactElements,

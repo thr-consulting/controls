@@ -5,20 +5,18 @@ import 'inputmask/dist/inputmask/inputmask.numeric.extensions';
 import Inputmask from 'inputmask';
 
 /**
- * See source for detailed prop types or {@link https://github.com/RobinHerbots/jquery.inputmask|here} for more info.
- * @memberOf module:addons/controls.MaskedInput
- * @typedef inputmaskPropTypes
+ * See source code for detailed prop types or {@link https://github.com/RobinHerbots/jquery.inputmask|here} for more info.
+ * @typedef {Object} inputmaskPropTypes
  */
 
 /**
  * Displays a masked input form. Warning: this component uses jquery for masking so it renders quite slow. Do not use
  * hundreds of these on one screen at the same time.
- * @memberOf module:addons/controls
  * @class
- * @property {string|number} value - The value to display
- * @property {onChange} onChange - Called when the value changes.
- * @property {module:addons/controls.MaskedInput.inputmaskPropTypes} mask - The mask object specified at {@link https://github.com/RobinHerbots/jquery.inputmask|here}.
- * @property {string} emptyValue - The value to display when the field is empty.
+ * @property {string|number} [value=null] - The value to display
+ * @property {onChange} [onChange=null] - Called when the value changes.
+ * @property {inputmaskPropTypes} [mask=null] - The mask object specified at {@link https://github.com/RobinHerbots/jquery.inputmask|here}.
+ * @property {string} [emptyValue=''] - The value to display when the field is empty.
  */
 export default class MaskedInput extends Component {
 	static propTypes = {

@@ -1,6 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+/**
+ * Maps onChange handler parameters from (event, data) to just (data).
+ * @class
+ * @property {*} value - The value of the field
+ * @property {Component} as - The React Component to render
+ * @property {string} asValue
+ * @property {onChange} onChange - The normal onChange handler
+ */
 export default function FieldMap({value, as, asValue, onChange, ...rest}) {
 	const props = {
 		...rest,

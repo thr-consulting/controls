@@ -9,11 +9,10 @@ import TPropTypes from 'tproptypes';
 /**
  * A SemanticUI field with error markings.
  * @class
- * @memberOf module:addons/controls
  * @property {string} for - The React Formal Form.Field name.
- * @property {module:addons/TPropTypes~reactElements} children - React children elements.
+ * @property {Component[]} children - React children elements.
  * @property {string} className - Additional class names applied to the field div.
- * @property {module:addons/TPropTypes.sFieldMessages} messages - Error messages from React Formal form.
+ * @property {Object[]} messages - Error messages from React Formal form.
  */
 function SField(props) {
 	return (

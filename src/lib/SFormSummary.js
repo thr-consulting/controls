@@ -8,7 +8,6 @@ import {Message} from 'semantic-ui-react';
 
 /**
  * Displays a message indicating any errors with the form. Include inside a SForm to automatically read the form's errors.
- * @memberOf module:addons/controls
  * @class
  * @property {string[]} otherErrors - An array of additional errors strings to display.
  */
