@@ -4,8 +4,6 @@ exports[`MaskedInput should render without throwing an error 1`] = `
 <Input
   type="text"
 >
-  <div>
-    <input />
-  </div>
+  <input />
 </Input>
 `;

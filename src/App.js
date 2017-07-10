@@ -16,7 +16,7 @@ export default function App() {
 						<Form>
 							<Form.Field>
 								<label>MaskedInput</label>
-								<MaskedInput mask={{mask: '99-999-99', autoUnmask: true, showMaskOnHover: false}}/>
+								<MaskedInput mask={{mask: '99-999-99', autoUnmask: true, showMaskOnHover: false}} fluid/>
 							</Form.Field>
 							<Form.Field>
 								<label>RadioGroup</label>

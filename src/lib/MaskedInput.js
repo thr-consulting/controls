@@ -1,3 +1,5 @@
+// @flow
+
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {Input} from 'semantic-ui-react';
@@ -25,6 +27,7 @@ export default class MaskedInput extends Component {
 			PropTypes.number,
 		]),
 		onChange: PropTypes.func,
+		emptyValue: PropTypes.string,
 		mask: PropTypes.shape({
 			placeholder: PropTypes.string,
 			optionalmarker: PropTypes.shape({
@@ -76,7 +79,6 @@ export default class MaskedInput extends Component {
 			inputmode: PropTypes.string,
 			colorMask: PropTypes.string,
 		}),
-		emptyValue: PropTypes.string,
 	};
 
 	static defaultProps = {
@@ -97,7 +99,7 @@ export default class MaskedInput extends Component {
 		im.mask(this._input);
 	}
 
-	componentDidUpdate(prevProps) {
+	componentDidUpdate(prevProps: Object) {
 		if (prevProps.value !== this.props.value) {
 			this._input.value = this.props.value;
 		}
@@ -112,7 +114,9 @@ export default class MaskedInput extends Component {
 		}
 	}
 
-	handleComplete = ev => {
+	_input: HTMLInputElement;
+
+	handleComplete = (ev: Object) => {
 		if (this.props.onChange) this.props.onChange(ev.target.value);
 	}
 
@@ -120,16 +124,15 @@ export default class MaskedInput extends Component {
 		if (this.props.onChange) this.props.onChange(this.props.emptyValue);
 	}
 
-	handleIncomplete = ev => {
+	handleIncomplete = (ev: Object) => {
 		if (this.props.onChange) this.props.onChange(ev.target.value);
 	}
 
 	render() {
+		const {value, onChange, emptyValue, mask, ...rest} = this.props;
 		return (
-			<Input>
-				<div>
-					<input ref={r => (this._input = r)}/>
-				</div>
+			<Input {...rest}>
+				<input ref={r => (this._input = r)}/>
 			</Input>
 		);
 	}
