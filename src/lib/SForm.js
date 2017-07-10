@@ -15,7 +15,6 @@ import SField from './SField';
  * @class
  * @property {boolean} [showSummary=false] - If true, displays the summary above the form children.
  * @property {Components[]} children - Child React elements.
- * @property {boolean} [loading=false] - If true, displays a loader over the form.
  * @property {string[]} otherErrors - An array of error strings passed to the SFormSummary.
  */
 export default class SForm extends Component {
@@ -24,28 +23,13 @@ export default class SForm extends Component {
 
 	static propTypes = {
 		showSummary: PropTypes.bool,
-		loading: PropTypes.bool,
 		otherErrors: PropTypes.arrayOf(PropTypes.string),
 		children: TPropTypes.reactElements,
-		// React Formal props
-		schema: PropTypes.object.isRequired,
-		value: PropTypes.object,
-		onSubmit: PropTypes.func,
-		onInvalidSubmit: PropTypes.func,
-		onChange: PropTypes.func,
 		onError: PropTypes.func,
-		onValidate: PropTypes.func,
-		delay: PropTypes.number,
-		strict: PropTypes.bool,
-		noValidate: PropTypes.bool,
-		component: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
-		context: PropTypes.object,
-		debug: PropTypes.bool,
 	};
 
 	static defaultProps = {
 		showSummary: false,
-		loading: false,
 	};
 
 	state = {
@@ -64,28 +48,17 @@ export default class SForm extends Component {
 	}
 
 	render() {
-		const summary = (this.props.showSummary) ? <SFormSummary otherErrors={this.props.otherErrors}/> : null;
-		const error = this.state.error || !!this.props.otherErrors;
+		const {showSummary, otherErrors, ...rest} = this.props;
+		const summary = showSummary ? <SFormSummary otherErrors={otherErrors}/> : null;
+		const error = this.state.error || !!otherErrors;
 
 		return (
 			<Form
 				as={Formal}
 				onError={this.handleError}
 				error={error}
-				loading={this.props.loading}
 				ref={node => (this._form = node)}
-				schema={this.props.schema}
-				value={this.props.value}
-				onSubmit={this.props.onSubmit}
-				onInvalidSubmit={this.props.onInvalidSubmit}
-				onChange={this.props.onChange}
-				onValidate={this.props.onValidate}
-				delay={this.props.delay}
-				strict={this.props.strict}
-				noValidate={this.props.noValidate}
-				component={this.props.component}
-				context={this.props.context}
-				debug={this.props.debug}
+				{...rest}
 			>
 				{summary}
 				{this.props.children}
