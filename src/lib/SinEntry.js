@@ -3,7 +3,7 @@
 import React, {Component} from 'react';
 import {Field} from 'react-formal';
 import {Button, Icon, Input} from 'semantic-ui-react';
-import TSchemas from 'tschemas';
+import TSchemas from '@thx/tschemas';
 import SForm from './SForm';
 import MaskedInput from './MaskedInput';
 
@@ -44,7 +44,7 @@ export default class SinEntry extends Component {
 		if (this.state.edit) {
 			return (
 				<SForm
-					schema={TSchemas.sin}
+					schema={TSchemas.sin()}
 					onSubmit={this.handleSubmit}
 					showSummary
 				>

@@ -4,7 +4,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {connectToMessageContainer} from 'react-input-message';
 import {Form} from 'semantic-ui-react';
-import TPropTypes from 'tproptypes';
+import TPropTypes from '@thx/tproptypes';
 
 /**
  * A SemanticUI field with error markings.

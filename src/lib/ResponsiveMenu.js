@@ -4,7 +4,7 @@ import React, {Children} from 'react';
 import PropTypes from 'prop-types';
 import MediaQuery from 'react-responsive';
 import {Menu} from 'semantic-ui-react';
-import TPropTypes from 'tproptypes';
+import TPropTypes from '@thx/tproptypes';
 import ResponsiveMenuItem from './ResponsiveMenuItem';
 import ResponsiveMenuDropdown from './ResponsiveMenuDropdown';
 

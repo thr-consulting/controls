@@ -5,7 +5,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import Formal from 'react-formal';
 import isEmpty from 'lodash/isEmpty';
-import TPropTypes from 'tproptypes';
+import TPropTypes from '@thx/tproptypes';
 import {Form} from 'semantic-ui-react';
 import SFormSummary from './SFormSummary';
 import SField from './SField';

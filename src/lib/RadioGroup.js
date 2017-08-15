@@ -2,7 +2,7 @@
 
 import React, {Component, Children} from 'react';
 import PropTypes from 'prop-types';
-import TPropTypes from 'tproptypes';
+import TPropTypes from '@thx/tproptypes';
 import debug from 'debug';
 import {Form} from 'semantic-ui-react';
 
