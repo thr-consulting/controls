@@ -5,7 +5,7 @@ import nodeExternals from 'webpack-node-externals';
 const root = path.resolve(__dirname);
 
 module.exports = {
-	entry: './src/lib/index.js',
+	entry: './lib/index.js',
 	target: 'node',
 	devtool: 'source-map',
 	externals: [nodeExternals()],
@@ -30,6 +30,9 @@ module.exports = {
 								'stage-1',
 								'react',
 								'flow',
+							],
+							plugins: [
+								'flow-react-proptypes',
 							],
 						},
 					},
