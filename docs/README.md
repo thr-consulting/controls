@@ -3,8 +3,6 @@
 <dl>
 <dt><a href="#FieldMap">FieldMap</a></dt>
 <dd></dd>
-<dt><a href="#MaskedInput">MaskedInput</a></dt>
-<dd></dd>
 <dt><a href="#RadioGroup">RadioGroup</a></dt>
 <dd></dd>
 <dt><a href="#ResponsiveMenu">ResponsiveMenu</a></dt>
@@ -16,8 +14,6 @@
 <dt><a href="#SFormSummary">SFormSummary</a></dt>
 <dd></dd>
 <dt><a href="#FieldMap">FieldMap</a></dt>
-<dd></dd>
-<dt><a href="#MaskedInput">MaskedInput</a></dt>
 <dd></dd>
 <dt><a href="#RadioGroup">RadioGroup</a></dt>
 <dd></dd>
@@ -69,36 +65,6 @@ Maps onChange handler parameters from (event, data) to just (data).
 
 ### new FieldMap()
 Maps onChange handler parameters from (event, data) to just (data).
-
-<a name="MaskedInput"></a>
-
-## MaskedInput
-**Kind**: global class  
-**Properties**
-
-| Name | Type | Default | Description |
-| --- | --- | --- | --- |
-| value | <code>string</code> \| <code>number</code> | <code>null</code> | The value to display |
-| onChange | <code>onChange</code> | <code></code> | Called when the value changes. |
-| mask | [<code>inputmaskPropTypes</code>](#inputmaskPropTypes) | <code></code> | The mask object specified at [here](https://github.com/RobinHerbots/jquery.inputmask). |
-| emptyValue | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | The value to display when the field is empty. |
-
-
-* [MaskedInput](#MaskedInput)
-    * [new MaskedInput()](#new_MaskedInput_new)
-    * [new MaskedInput()](#new_MaskedInput_new)
-
-<a name="new_MaskedInput_new"></a>
-
-### new MaskedInput()
-Displays a masked input form. Warning: this component uses jquery for masking so it renders quite slow. Do not use
-hundreds of these on one screen at the same time.
-
-<a name="new_MaskedInput_new"></a>
-
-### new MaskedInput()
-Displays a masked input form. Warning: this component uses jquery for masking so it renders quite slow. Do not use
-hundreds of these on one screen at the same time.
 
 <a name="RadioGroup"></a>
 
@@ -260,36 +226,6 @@ Maps onChange handler parameters from (event, data) to just (data).
 
 ### new FieldMap()
 Maps onChange handler parameters from (event, data) to just (data).
-
-<a name="MaskedInput"></a>
-
-## MaskedInput
-**Kind**: global class  
-**Properties**
-
-| Name | Type | Default | Description |
-| --- | --- | --- | --- |
-| value | <code>string</code> \| <code>number</code> | <code>null</code> | The value to display |
-| onChange | <code>onChange</code> | <code></code> | Called when the value changes. |
-| mask | [<code>inputmaskPropTypes</code>](#inputmaskPropTypes) | <code></code> | The mask object specified at [here](https://github.com/RobinHerbots/jquery.inputmask). |
-| emptyValue | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | The value to display when the field is empty. |
-
-
-* [MaskedInput](#MaskedInput)
-    * [new MaskedInput()](#new_MaskedInput_new)
-    * [new MaskedInput()](#new_MaskedInput_new)
-
-<a name="new_MaskedInput_new"></a>
-
-### new MaskedInput()
-Displays a masked input form. Warning: this component uses jquery for masking so it renders quite slow. Do not use
-hundreds of these on one screen at the same time.
-
-<a name="new_MaskedInput_new"></a>
-
-### new MaskedInput()
-Displays a masked input form. Warning: this component uses jquery for masking so it renders quite slow. Do not use
-hundreds of these on one screen at the same time.
 
 <a name="RadioGroup"></a>
 
