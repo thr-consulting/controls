@@ -1,6 +1,6 @@
 {
   "name": "@thx/controls",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A collection of form components designed with SemanticUI. They all adhere to React Formal's policy of having a value prop and an onChange() prop.",
   "main": "dist/index.js",
   "scripts": {
@@ -76,10 +76,10 @@
     "react": "^15.5.0",
     "react-dom": "^15.6.0",
     "react-formal": "^0.25.4",
-    "semantic-ui-react": "^0.71.3"
+    "semantic-ui-react": "^0.72.0"
   },
   "dependencies": {
-    "@thx/tschemas": "^1.0.3",
+    "@thx/tschemas": "^1.0.4",
     "debug": "^3.0.0",
     "inputmask": "^3.3.7",
     "lodash": "^4.17.4",
