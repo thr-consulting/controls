@@ -1,6 +1,6 @@
 import React from 'react';
 import {mount} from 'enzyme';
-import ResponsiveMenu from '../ResponsiveMenu';
+import ResponsiveMenu from '../src/ResponsiveMenu';
 
 describe('ResponsiveMenu', () => {
 	it('should render without throwing an error', () => {
