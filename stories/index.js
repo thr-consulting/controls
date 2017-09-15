@@ -4,7 +4,7 @@ import {storiesOf} from '@storybook/react';
 import {action} from '@storybook/addon-actions';
 import {withKnobs, boolean, text, object} from '@storybook/addon-knobs';
 import {Form} from 'semantic-ui-react';
-import {MaskedInput, RadioGroup, ResponsiveMenu, SinEntry} from '../lib';
+import {MaskedInput, RadioGroup, ResponsiveMenu, SinEntry} from '../lib2';
 
 const stories = storiesOf('Controls', module)
 	.addDecorator(withKnobs)

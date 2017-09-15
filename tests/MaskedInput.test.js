@@ -1,6 +1,6 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import MaskedInput from '../MaskedInput';
+import MaskedInput from '../src/MaskedInput';
 
 describe('MaskedInput', () => {
 	it('should render without throwing an error', () => {

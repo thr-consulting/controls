@@ -1,7 +1,7 @@
 import React from 'react';
 import {shallow, mount} from 'enzyme';
 import {Input} from 'semantic-ui-react';
-import FieldMap from '../FieldMap';
+import FieldMap from '../src/FieldMap';
 
 describe('FieldMap', () => {
 	it('should render without throwing an error', () => {

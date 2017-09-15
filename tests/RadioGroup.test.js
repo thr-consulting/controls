@@ -1,7 +1,7 @@
 import React from 'react';
 import {shallow, mount} from 'enzyme';
 import {Form} from 'semantic-ui-react';
-import RadioGroup from '../RadioGroup';
+import RadioGroup from '../src/RadioGroup';
 
 describe('RadioGroup', () => {
 	it('should render without throwing an error', () => {
