@@ -1,11 +1,11 @@
 {
   "name": "@thx/controls",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "A collection of form components designed with SemanticUI. They all adhere to React Formal's policy of having a value prop and an onChange() prop.",
-  "main": "dist/index.js",
+  "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.config.babel.js",
-    "prepare": "npm run build",
+    "deploy": "DEPLOY=true npm run build",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage && cat coverage/lcov.info | coverbadge -o coverage/coverage.svg",
@@ -39,13 +39,15 @@
     "@storybook/addon-knobs": "^3.2.7",
     "@storybook/react": "^3.2.7",
     "babel-core": "^6.25.0",
-    "babel-eslint": "^7.2.3",
+    "babel-eslint": "^8.0.0",
     "babel-loader": "^7.1.1",
     "babel-plugin-flow-react-proptypes": "^5.1.1",
-    "babel-preset-es2015": "^6.24.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-1": "^6.24.1",
     "coverbadge": "^0.5.5",
     "enzyme": "^2.9.1",
     "enzyme-to-json": "^1.5.1",
@@ -54,12 +56,12 @@
     "eslint-plugin-babel": "^4.1.1",
     "eslint-plugin-flowtype": "^2.34.1",
     "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jest": "^20.0.3",
+    "eslint-plugin-jest": "^21.1.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
-    "flow-bin": "^0.53.1",
+    "flow-bin": "^0.54.1",
     "ink-docstrap": "^1.3.0",
-    "jest": "^20.0.4",
+    "jest": "^21.1.0",
     "jsdoc": "^3.4.3",
     "jsdoc-babel": "^0.3.0",
     "jsdoc-to-markdown": "^3.0.0",
@@ -68,7 +70,7 @@
     "react-dom": "^15.6.1",
     "react-formal": "^0.25.4",
     "react-test-renderer": "^15.6.1",
-    "semantic-ui-react": "^0.72.0",
+    "semantic-ui-react": "^0.73.0",
     "webpack": "^3.1.0",
     "webpack-node-externals": "^1.6.0"
   },
@@ -76,10 +78,10 @@
     "react": "^15.5.0",
     "react-dom": "^15.6.0",
     "react-formal": "^0.25.4",
-    "semantic-ui-react": "^0.72.0"
+    "semantic-ui-react": "^0.73.0"
   },
   "dependencies": {
-    "@thx/tschemas": "^1.0.4",
+    "@thx/tschemas": "^2.0.0",
     "debug": "^3.0.0",
     "inputmask": "^3.3.7",
     "lodash": "^4.17.4",
@@ -96,7 +98,6 @@
   "pre-commit": [
     "lint",
     "flow",
-    "test",
-    "docs:md"
+    "test"
   ]
 }
